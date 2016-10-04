@@ -1,0 +1,68 @@
+﻿<Page
+    x:Class="ArtikelCRMgoesIoT.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ArtikelCRMgoesIoT"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" Width="800" Height="483" Loaded="Page_Loaded">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+          
+          
+          
+        </Grid.RowDefinitions>
+        <StackPanel>
+            <TextBlock Text="Raum" FontSize="18" Margin="12,0,0,0"></TextBlock>
+            <TextBlock Text="Kepler" FontSize="24" Margin="13,0,0,0"></TextBlock>
+        </StackPanel>
+        <StackPanel Grid.Column="1">
+           <Image Source="Assets/Logo.png" Height="61"/>
+        </StackPanel>
+        <StackPanel Grid.Row="1" Margin="0,0.6,0,107" Grid.RowSpan="2">
+            <TextBlock Text="Schulung" Margin="12,0,0,0" FontSize="24">
+                
+            </TextBlock>
+            <TextBlock x:Name="TrainingHeader" Text="" FontSize="30" Margin="15,0,0,0" Height="50">
+                
+            </TextBlock>
+        </StackPanel>
+        <StackPanel Grid.Row="1" Margin="0,0.6,0,107" Grid.RowSpan="2" Grid.Column="1">
+            <TextBlock x:Name="BusyTxt" Text="" Margin="12,0,0,0" FontSize="24">
+
+            </TextBlock>
+           <ProgressRing Height="45" Margin="190,0,165,0" Width="45" IsActive="True"></ProgressRing>
+        </StackPanel>
+        <StackPanel Grid.Row="2" Grid.Column="1" Margin="0,0.2,0,-0.6" Grid.RowSpan="3" d:LayoutOverrides="TopPosition, BottomPosition" Grid.ColumnSpan="3" >
+            
+            <TextBlock Text="Infos" FontSize="24" Margin="15,0,0,0">
+
+            </TextBlock>
+            <TextBlock x:Name="TrainerTxt" Text="" Margin="12,0,0,0"></TextBlock>
+            <TextBlock x:Name="DescriptionTxt" Text="" Margin="12,0,10,0" Height="195" TextWrapping="Wrap"/>
+        </StackPanel>
+        <StackPanel Grid.Row="2" Margin="0,0.2,0,0" d:LayoutOverrides="TopPosition, BottomPosition">
+            <TextBlock x:Name="StartTxt" Text="" FontSize="20" Margin="15,0,0,0" />
+            <TextBlock x:Name="EndTxt" Text="" FontSize="20" Margin="15,0,0,0" />
+        </StackPanel>
+        <StackPanel Grid.Row="3" Margin="0,0.2" d:LayoutOverrides="TopPosition, BottomPosition">
+            <TextBlock Text="Teilnehmer" Margin="12,0,0,0" FontSize="24"/>
+            <TextBlock x:Name="UserNameTxt" Text="" FontSize="30" Margin="15,0,0,0"/>
+        </StackPanel>
+        <StackPanel Grid.Row="4" Margin="0,0.2,0,0" d:LayoutOverrides="TopPosition, BottomPosition">
+            <TextBlock Text="Status" Margin="12,0,0,0" FontSize="24"/>
+            <TextBlock x:Name="StatusTxt" Text="" FontSize="30" Margin="15,0,0,0" Foreground="#FF12850D"/>
+        </StackPanel>
+      
+    </Grid>
+</Page>
